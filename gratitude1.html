@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<style type="text/css">
+
+
+		#picture{
+			width:10px;
+			height:0px;
+			background-image:url(picture.jpeg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			top:0px;
+			position: absolute;
+			z-index: 10;
+
+
+		}
+
+
+		#hoop{
+			width:400px;
+			height:400px;
+			background-image:url(hoop.png);
+			background-size:contain;
+			background-repeat: no-repeat;
+			z-index: -10;
+
+
+		}
+
+		#bball{
+			width:150px;
+			height:150px;
+			background-image:url(bball.png);
+			background-size:contain;
+			background-repeat: no-repeat;
+			animation-name:shoot;
+			animation-duration:2s;
+			animation-iteration-count:1;
+			position:absolute;
+			top:500px;
+			left:50px;
+			z-index: -10;
+
+
+		}
+
+
+			@keyframes shoot{
+			0%{
+				top:500px;
+			left:50px;
+			}
+
+			20%{
+				top:400px;
+			left:150px;
+			}
+
+
+			40%{
+				top:310px;
+			left:230px;
+			}
+
+
+			
+			60%{
+				top:200px;
+			left:330px;
+			}
+
+			80%{
+				top:102px;
+			left:450px;
+			}
+
+
+			90%{
+				top:0px;
+			left:590px;
+			}
+
+
+			100%{
+				top:500px;
+			left:590px;
+			}
+		}
+
+</style>
+
+</head>
+<body>
+
+    
+
+<center>
+<div id="hoop"></div>
+</center>
+
+<div id="bball"></div>
+
+
+<center><div id="picture"></div></center>
+
+<script type="text/javascript">
+	
+	hoop.addEventListener("click", 
+		function(){
+		picture.style.width ="100%";
+		picture.style.height ="1000px";
+		
+	})
+
+</script>
+
+</body>
+</html>
