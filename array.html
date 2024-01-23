@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	
+	#text{
+		  width:500px;
+          height:500px;
+          display:inline-block;
+          position: absolute;
+          background-image:url(https://suncatcherstudio.com/uploads/printables/to-do-list/pdf-png/printable-to-do-list-template-1-fefefe-010101.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          display:inline-block ;
+          position: absolute;
+          top: 100px;
+          left: 600px;
+          font-size: 50px;
+	}
+</style>
+
+
+</head>
+<body>
+
+<center>
+	<h1>Goals For 2024</h1>
+</center>
+
+
+
+
+<div id="text"></div>
+	<script type="text/javascript">
+		 
+
+		 var random = Math.round(Math.random()*4)
+		 var goals = ["Hit 185 bench",
+		  "stay away from luke", 
+		  "eat more", 
+		  "get faster", 
+		  "get more money"]
+
+
+document.addEventListener("click", function(){
+	var random = Math.round(Math.random()*4);
+	console.log(goals[random])
+	text.innerText = goals[random]
+})
+		  
+
+	</script>
+
+
+
+
+</body>
+</html>
